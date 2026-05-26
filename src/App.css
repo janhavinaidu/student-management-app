@@ -1,0 +1,280 @@
+/* ===== Google Font ===== */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+/* ===== Reset & Base ===== */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ===== App Wrapper ===== */
+.app-wrapper {
+  min-height: 100vh;
+  background-color: #ede4f0;
+  font-family: 'Inter', Arial, sans-serif;
+  color: #1a1a2e;
+}
+
+/* ===== Header ===== */
+.app-header {
+  background-color: #ede4f0;
+  padding: 36px 24px 12px;
+  text-align: center;
+}
+
+.app-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1a1a2e;
+  letter-spacing: -0.5px;
+}
+
+/* ===== Main Container ===== */
+.main-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 16px 24px 48px;
+}
+
+/* ===== Form Card ===== */
+.form-card {
+  background-color: rgba(255, 255, 255, 0.55);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  border-radius: 12px;
+  padding: 28px 32px;
+  margin-bottom: 28px;
+  box-shadow: 0 2px 12px rgba(120, 80, 160, 0.08);
+}
+
+/* ===== Form Fields ===== */
+.form-fields-row {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-bottom: 18px;
+}
+
+.form-input {
+  flex: 1 1 180px;
+  padding: 10px 14px;
+  font-size: 0.95rem;
+  font-family: 'Inter', Arial, sans-serif;
+  border: 1.5px solid #c4b0d8;
+  border-radius: 8px;
+  background: #fff;
+  color: #1a1a2e;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-input::placeholder {
+  color: #a89bbf;
+}
+
+.form-input:focus {
+  border-color: #5b7ff5;
+  box-shadow: 0 0 0 3px rgba(91, 127, 245, 0.15);
+}
+
+/* ===== Form Buttons ===== */
+.form-actions {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+/* ===== Base Button ===== */
+.btn {
+  padding: 10px 22px;
+  font-size: 0.92rem;
+  font-family: 'Inter', Arial, sans-serif;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.15s, box-shadow 0.15s, opacity 0.15s;
+}
+
+.btn:active {
+  transform: scale(0.97);
+}
+
+/* Blue – Add / Update Student */
+.btn-primary {
+  background-color: #3d6ef5;
+  color: #fff;
+  box-shadow: 0 3px 10px rgba(61, 110, 245, 0.35);
+}
+
+.btn-primary:hover {
+  background-color: #2d5ee0;
+  box-shadow: 0 4px 14px rgba(61, 110, 245, 0.45);
+}
+
+/* Dark Gray – Reset */
+.btn-reset {
+  background-color: #3a3a4a;
+  color: #fff;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.18);
+}
+
+.btn-reset:hover {
+  background-color: #2a2a38;
+}
+
+/* Orange – Edit */
+.btn-edit {
+  background-color: #f5a623;
+  color: #fff;
+  padding: 8px 18px;
+  font-size: 0.88rem;
+  border-radius: 7px;
+  box-shadow: 0 2px 8px rgba(245, 166, 35, 0.35);
+}
+
+.btn-edit:hover {
+  background-color: #e09510;
+}
+
+/* Red – Delete */
+.btn-delete {
+  background-color: #e53935;
+  color: #fff;
+  padding: 8px 16px;
+  font-size: 0.88rem;
+  border-radius: 7px;
+  box-shadow: 0 2px 8px rgba(229, 57, 53, 0.35);
+}
+
+.btn-delete:hover {
+  background-color: #c62828;
+}
+
+/* ===== Students List ===== */
+.students-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* ===== Student Card ===== */
+.student-card {
+  background-color: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.85);
+  border-radius: 12px;
+  padding: 20px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  box-shadow: 0 2px 10px rgba(120, 80, 160, 0.07);
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.student-card:hover {
+  box-shadow: 0 6px 20px rgba(120, 80, 160, 0.15);
+  transform: translateY(-2px);
+}
+
+.student-card--editing {
+  border: 2px solid #3d6ef5;
+  box-shadow: 0 0 0 4px rgba(61, 110, 245, 0.12);
+}
+
+/* ===== Student Info ===== */
+.student-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.student-name {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #1a1a2e;
+  margin-bottom: 2px;
+}
+
+.student-detail {
+  font-size: 0.9rem;
+  color: #4a4a6a;
+  margin: 0;
+}
+
+.detail-label {
+  font-weight: 600;
+  color: #2d2d50;
+}
+
+/* ===== Card Actions ===== */
+.card-actions {
+  display: flex;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+/* ===== Empty State ===== */
+.empty-state {
+  text-align: center;
+  padding: 40px 20px;
+  color: #8c7aaa;
+  font-size: 0.98rem;
+  background: rgba(255, 255, 255, 0.45);
+  border-radius: 12px;
+  border: 1px dashed #c4b0d8;
+}
+
+/* ===== Toast Notification ===== */
+.toast {
+  position: fixed;
+  top: 20px;
+  right: 24px;
+  z-index: 9999;
+  padding: 13px 22px;
+  border-radius: 10px;
+  font-size: 0.93rem;
+  font-weight: 500;
+  color: #fff;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.18);
+  animation: slideInRight 0.3s ease, fadeOut 0.4s ease 2.6s forwards;
+}
+
+.toast-success {
+  background-color: #2e7d32;
+}
+
+.toast-error {
+  background-color: #c62828;
+}
+
+@keyframes slideInRight {
+  from { opacity: 0; transform: translateX(60px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes fadeOut {
+  from { opacity: 1; }
+  to   { opacity: 0; pointer-events: none; }
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 600px) {
+  .app-title {
+    font-size: 1.4rem;
+  }
+
+  .form-fields-row {
+    flex-direction: column;
+  }
+
+  .student-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .card-actions {
+    width: 100%;
+    justify-content: flex-end;
+  }
+}
